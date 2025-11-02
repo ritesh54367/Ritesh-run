@@ -3,30 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Javi Run — Billions Theme</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Javi Run — gBillions Runner</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Javi Run</h1>
-    <div class="score">Score: <span id="score">0</span> • Tokens: <span id="tokens">0</span></div>
-  </header>
+  <div id="game-wrap" class="billions-theme">
+    <header>
+      <h1>Javi Run</h1>
+      <div class="score">Score: <span id="score">0</span></div>
+    </header>
 
-  <main>
-    <canvas id="game" width="900" height="450"></canvas>
+    <main>
+      <canvas id="game" width="900" height="320"></canvas>
 
-    <div id="overlay" class="hidden">
-      <div class="panel">
-        <h2 id="panel-title">Game Over</h2>
-        <p id="panel-score">Score: 0 • Tokens: 0</p>
-        <button id="btn-restart">Restart</button>
+      <div id="overlay" class="hidden">
+        <div class="panel">
+          <h2 id="panel-title">Game Over</h2>
+          <p id="panel-score">Score: 0</p>
+          <button id="btn-restart">Restart</button>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <small>Controls: Space / ↑ / Click / Touch — Collect tokens, avoid obstacles</small>
-  </footer>
+    <footer>
+      <div class="controls">
+        <div>Controls: Space / Up / Tap to jump</div>
+        <div class="hint">Backgrounds are editable in <code>assets/</code> and <code>style.css</code></div>
+      </div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
